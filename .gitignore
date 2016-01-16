@@ -1,0 +1,7 @@
+.log
+
+tmp
+.sass-cache
+
+*.css.map
+*_notes
