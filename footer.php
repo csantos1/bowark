@@ -16,7 +16,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	  <div class="layout-container">
+              <img id="top-button" src="<?php bloginfo('template_url'); ?>/images/top-button.png">
 		<div class="site-info">
+                    <h1>Join Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit In sed egestas urna</p>
+                    <?php echo do_shortcode( '[contact-form-7 id="26" title="Join"]' ); ?>
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bowark' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bowark' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bowark' ), 'bowark', '<a href="http://ceciliasantos.com" rel="designer">Cecilia Santos</a>' ); ?>

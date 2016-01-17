@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Bowark
 Theme URI: http://avans.ca/
@@ -279,9 +280,9 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: normal;
-  color: #475B62;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #000;
 }
 
 p {
@@ -831,6 +832,72 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Site Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background: #484b52;
+  color: #bebebe;
+}
+
+.site-footer #top-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -37px;
+}
+
+.site-footer a {
+  color: #bebebe;
+}
+
+.site-info {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.site-info h1, .site-info h2, .site-info h3, .site-info h4, .site-info h5, .site-info h6 {
+  color: #bebebe;
+}
+
+.site-info .wpcf7-submit {
+  background: #bebebe;
+  color: #484b52;
+  font-size: 1rem;
+}
+
+.site-info .wpcf7-text {
+  background: transparent;
+  padding-left: 1em;
+}
+
+::-webkit-input-placeholder::before {
+  font-family: fontAwesome;
+  content: '\f0e0  ';
+  color: #bebebe;
+}
+
+::-moz-placeholder::before {
+  font-family: fontAwesome;
+  content: '\f0e0  ';
+  color: #bebebe;
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder::before {
+  font-family: fontAwesome;
+  content: '\f0e0  ';
+  color: #bebebe;
+}
+
+/* ie */
+input:-moz-placeholder::before {
+  font-family: fontAwesome;
+  content: '\f0e0  ';
+  color: #bebebe;
 }
 
 /*--------------------------------------------------------------
