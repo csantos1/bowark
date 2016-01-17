@@ -14,8 +14,12 @@
 .site-info {
     text-align: center;
     margin-top: -30px;
+    padding-bottom: 30px;
     h1, h2, h3, h4, h5, h6 {
         color: $lightergray;
+    }
+    h2 {
+        background: url('images/partners-back.png') no-repeat center center;
     }
     .wpcf7 {
         margin: 30px auto;
@@ -40,6 +44,14 @@
             }
            }
     }
+}
+
+#footer-logo {
+    @include center-block;
+}
+
+html {
+    background: url('images/back-html.png') repeat-x center bottom;
 }
 
 ::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f0e0  '; color: $lightergray }

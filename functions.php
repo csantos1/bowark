@@ -46,6 +46,7 @@ function bowark_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'bowark' ),
 		'top' => esc_html__( 'Top', 'bowark' ),
+		'footer' => esc_html__( 'Footer', 'bowark' ),
 	) );
 
 	/*

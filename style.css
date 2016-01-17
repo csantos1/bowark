@@ -632,6 +632,45 @@ a:hover, a:active {
   margin-right: .5em;
 }
 
+.footer-menu {
+  margin: 40px auto;
+  content: "";
+  display: table;
+  table-layout: fixed;
+  clear: both;
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  display: inline;
+}
+
+.footer-menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.footer-menu ul li a:after {
+  content: '|';
+  padding: 0 2em;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-menu ul li a:after {
+    content: '';
+  }
+}
+
+.footer-menu ul li:last-of-type a:after {
+  content: '';
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -857,10 +896,15 @@ a:hover, a:active {
 .site-info {
   text-align: center;
   margin-top: -30px;
+  padding-bottom: 30px;
 }
 
 .site-info h1, .site-info h2, .site-info h3, .site-info h4, .site-info h5, .site-info h6 {
   color: #bebebe;
+}
+
+.site-info h2 {
+  background: url("images/partners-back.png") no-repeat center center;
 }
 
 .site-info .wpcf7 {
@@ -885,6 +929,16 @@ a:hover, a:active {
 
 .site-info p a:last-of-type i {
   margin-right: 0;
+}
+
+#footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  background: url("images/back-html.png") repeat-x center bottom;
 }
 
 ::-webkit-input-placeholder::before {
