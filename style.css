@@ -863,6 +863,10 @@ a:hover, a:active {
   color: #bebebe;
 }
 
+.site-info .wpcf7 {
+  margin: 30px auto;
+}
+
 .site-info .wpcf7-submit {
   background: #bebebe;
   color: #484b52;
@@ -872,6 +876,15 @@ a:hover, a:active {
 .site-info .wpcf7-text {
   background: transparent;
   padding-left: 1em;
+}
+
+.site-info p a i {
+  font-size: 1.3rem;
+  margin-right: .6em;
+}
+
+.site-info p a:last-of-type i {
+  margin-right: 0;
 }
 
 ::-webkit-input-placeholder::before {

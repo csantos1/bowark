@@ -17,6 +17,9 @@
     h1, h2, h3, h4, h5, h6 {
         color: $lightergray;
     }
+    .wpcf7 {
+        margin: 30px auto;
+    }
     .wpcf7-submit {
         background: $lightergray;
         color: $gray;
@@ -25,6 +28,17 @@
     .wpcf7-text {
         background: transparent;
         padding-left: 1em;
+    }
+    p {
+        a{
+          i {
+            font-size: 1.3rem;
+            margin-right: .6em;
+            }
+          &:last-of-type i {
+                margin-right: 0;
+            }
+           }
     }
 }
 
