@@ -113,8 +113,9 @@ dfn {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.3em;
   margin: 0.67em 0;
+  text-transform: uppercase;
 }
 
 mark {
@@ -283,6 +284,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #000;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 p {
@@ -537,15 +542,17 @@ a:hover, a:active {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 2em;
+  top: 2.5em;
   left: -999em;
   z-index: 99999;
   width: auto;
+  background: url("images/submenu-back.png") no-repeat center top;
+  padding-top: 11px;
 }
 
 .main-navigation ul ul li {
   width: 100%;
-  border-top: 1px solid #4d4d4d;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #1a1a1a;
 }
 
@@ -570,6 +577,17 @@ a:hover, a:active {
 .main-navigation ul ul a {
   width: auto;
   white-space: nowrap;
+  background: #074b88;
+  padding-left: 60px;
+  color: #fff;
+}
+
+.main-navigation ul ul a[href*="projects"] {
+  background: #074b88 url("images/icon-projects-small.png") no-repeat 24px center;
+}
+
+.main-navigation ul ul a[href*="current"] {
+  background: #074b88 url("images/icon-current-small.png") no-repeat 24px center;
 }
 
 .main-navigation ul ul :hover > a,
@@ -681,13 +699,17 @@ a:hover, a:active {
   display: none;
 }
 
+#mobile-header a i {
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
   .main-navigation ul {
     display: block;
-    background: #2f373e;
+    background: #074b88;
   }
 }
 

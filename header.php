@@ -64,5 +64,9 @@
 	</header><!-- #masthead -->
         
         <?php putRevSlider("slider1","homepage") ?>
+        
+        <?php if(!is_front_page()) { ?>
+            <?php putRevSlider( "inner" ) ?>
+        <?php } ?>
 
 	<div id="content" class="site-content">
