@@ -1403,6 +1403,9 @@ object {
   .arrow-left-thumb .thumbnail span {
     top: 30px;
   }
+  .side-menu-container {
+    width: 190px;
+  }
   .upw-posts article .entry-image span {
     left: 82px;
   }
@@ -1425,6 +1428,9 @@ object {
   }
   .arrow-left-thumb .thumbnail span {
     top: 50px;
+  }
+  .side-menu-container {
+    width: 280px;
   }
   .upw-posts article .entry-image span {
     left: 115px;
