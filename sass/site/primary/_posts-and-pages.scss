@@ -27,7 +27,62 @@
 	margin: 0 0 1.5em;
 }
 
+.arrow-left-thumb {
+    background: $darkwhite;
+    .thumbnail {
+        position: relative;
+        span {
+            position: absolute;
+            right: 0;
+            top: 65px;
+            width: 47px;
+            height: 77px;
+            background: url('images/arrow-left-white.png') no-repeat left top;
+            z-index: 10;
+        }  
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
 
-.project-listing {
-    height: 300px;
+.project-list {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        width: 50%;
+        float: left;
+        height: 160px;
+    }
+    h4 {
+        font-size: 18px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        a {
+            color: $gray;
+            text-decoration: none;
+        }
+    }
+    p {
+        margin-top: 0;
+        padding-top: 5px;
+        font-size: .8em;
+    }
+}
+
+.features-list {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            background: url('images/icon-check-buble.png') no-repeat left 2px;
+            padding: 0 0 1em 26px;
+            font-size: .9em;
+        }
+    }
 }

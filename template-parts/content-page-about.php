@@ -15,10 +15,24 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content();
+            
+            <?php the_content(); ?>
+		
+		<div class="section group arrow-left-thumb">
+                <div class="col span_6_of_12 thumbnail">
+                    <span></span>
+                    <?php
+                        $thumbnail_id = get_post_thumbnail_id();
+                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+                    ?>
+                    <p><a href="<?php the_permalink(); ?>"><img class="img-responsive" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?>"></a></p>
+                 </div>
+                 <div class="col span_6_of_12">
+                    <?php the_excerpt(); ?>
+                </div>
+                </div>
 
-			wp_link_pages( array(
+		<?php	wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bowark' ),
 				'after'  => '</div>',
 			) );

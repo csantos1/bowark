@@ -169,7 +169,19 @@
     }
 }
 
+.side-menu-container {
+    height: 200px;
+    width: 319px;;
+    position: relative;
+}
+
 .side-menu {
+    background: $white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
     ul {
         li {
             list-style: none;

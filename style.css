@@ -296,6 +296,57 @@ h1.entry-title span {
   background: url("images/logo-symbol.png") no-repeat center bottom;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h2 span {
+  display: inline-block;
+  padding-bottom: .7em;
+  background: url("images/logo-symbol.png") no-repeat center bottom;
+}
+
+h2 em {
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h3 span {
+  display: inline-block;
+  padding-bottom: 1em;
+  background: url("images/logo-symbol.png") no-repeat center bottom;
+}
+
+h3 em {
+  font-weight: 300;
+  font-style: normal;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: .3em;
+}
+
+h4 a {
+  color: #000;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #000;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -695,6 +746,21 @@ a:hover, a:active {
   content: '';
 }
 
+.side-menu-container {
+  height: 200px;
+  width: 319px;
+  position: relative;
+}
+
+.side-menu {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
 .side-menu ul li {
   list-style: none;
   margin: 0 0 1em;
@@ -934,8 +1000,70 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
-.project-listing {
-  height: 300px;
+.arrow-left-thumb {
+  background: #f5f5f5;
+}
+
+.arrow-left-thumb .thumbnail {
+  position: relative;
+}
+
+.arrow-left-thumb .thumbnail span {
+  position: absolute;
+  right: 0;
+  top: 65px;
+  width: 47px;
+  height: 77px;
+  background: url("images/arrow-left-white.png") no-repeat left top;
+  z-index: 10;
+}
+
+.arrow-left-thumb p {
+  margin: 0;
+  padding: 0;
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+}
+
+.project-list li {
+  list-style: none;
+  width: 50%;
+  float: left;
+  height: 160px;
+}
+
+.project-list h4 {
+  font-size: 18px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.project-list h4 a {
+  color: #484b52;
+  text-decoration: none;
+}
+
+.project-list p {
+  margin-top: 0;
+  padding-top: 5px;
+  font-size: .8em;
+}
+
+.features-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.features-list ul li {
+  list-style: none;
+  background: url("images/icon-check-buble.png") no-repeat left 2px;
+  padding: 0 0 1em 26px;
+  font-size: .9em;
 }
 
 /*--------------------------------------------------------------
@@ -944,6 +1072,64 @@ a:hover, a:active {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
+}
+
+.upw-posts article {
+  border-bottom: none !important;
+}
+
+.upw-posts article .entry-image {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.upw-posts article .entry-image span {
+  display: inline-block;
+  width: 37px;
+  height: 23px;
+  position: absolute;
+  left: 140px;
+  bottom: 0;
+  z-index: 10;
+  background: url("images/arrow-up-span.png") no-repeat center top;
+}
+
+.upw-posts article .entry-image a {
+  background: #f5f5f5;
+}
+
+.upw-posts article .entry-title {
+  background: #f5f5f5 url("images/logo-symbol.png") no-repeat center bottom;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 1.3em;
+  padding-bottom: 1.5em;
+}
+
+.upw-posts article .entry-summary {
+  background: #f5f5f5;
+  margin-top: 0;
+  padding-top: .8em;
+  padding-bottom: .8em;
+}
+
+.upw-posts p {
+  text-align: center;
+  font-size: .9rem;
+}
+
+.upw-posts .more-link {
+  display: block;
+  clear: both;
+  width: 150px;
+  margin: 1.5em auto;
+  padding: .5em 0;
+  border: 1px solid #bebebe;
+  color: #819090;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1186,6 +1372,17 @@ object {
     float: right;
     margin-right: 15px;
   }
+  .project-list li {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .arrow-left-thumb .thumbnail span {
+    display: none;
+  }
+  .upw-posts article .entry-image span {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1203,6 +1400,12 @@ object {
     padding: 10px 5px;
     font-size: .7rem;
   }
+  .arrow-left-thumb .thumbnail span {
+    top: 30px;
+  }
+  .upw-posts article .entry-image span {
+    left: 82px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1219,6 +1422,12 @@ object {
   .main-navigation a {
     padding: 13px 10px;
     font-size: .8rem;
+  }
+  .arrow-left-thumb .thumbnail span {
+    top: 50px;
+  }
+  .upw-posts article .entry-image span {
+    left: 115px;
   }
 }
 

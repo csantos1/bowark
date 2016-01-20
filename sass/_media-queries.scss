@@ -19,7 +19,30 @@
         float: right;
         margin-right: 15px;
       }
-    }
+   }
+   .project-list {
+       li {
+           width: 100%;
+           float: none;
+           height: auto;
+       }
+   }
+  .arrow-left-thumb {
+      .thumbnail {
+          span {
+              display: none;
+          }
+      }
+  }
+  .upw-posts {
+      article {
+          .entry-image {
+              span {
+                  display: none;
+              }
+          }
+      }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -37,6 +60,22 @@
       padding: 10px 5px;
       font-size: .7rem;
   }
+  .arrow-left-thumb {
+      .thumbnail {
+          span {
+              top: 30px;
+          }
+      }
+  }
+  .upw-posts {
+      article {
+          .entry-image {
+              span {
+                  left: 82px;
+              }
+          }
+      }
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -53,6 +92,22 @@
   .main-navigation a {
       padding: 13px 10px;
       font-size: .8rem;
+  }
+  .arrow-left-thumb {
+      .thumbnail {
+          span {
+              top: 50px;
+          }
+      }
+  }
+  .upw-posts {
+      article {
+          .entry-image {
+              span {
+                  left: 115px;
+              }
+          }
+      }
   }
 }
 

@@ -105,6 +105,22 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'bowa
 
 add_action( 'customize_register', 'bowark_theme_customizer' );
 
+/**
+ * Enables the Excerpt meta box in Page edit screen.
+ */
+function wpcodex_add_excerpt_support_for_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+add_action( 'init', 'wpcodex_add_excerpt_support_for_pages' );
+
+/**
+ * Changes more symbol on excerpt
+ */
+function new_excerpt_more( $more ) {
+	return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

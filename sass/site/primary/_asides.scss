@@ -2,3 +2,56 @@
 .archive .format-aside .entry-title {
 	display: none;
 }
+
+.upw-posts {
+    article {
+        border-bottom: none !important;
+        .entry-image {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            position: relative;
+            span {
+               display: inline-block;
+               width: 37px;
+               height: 23px;
+               position: absolute;
+               left: 140px;
+               bottom: 0;
+               z-index: 10;
+               background: url('images/arrow-up-span.png') no-repeat center top; 
+            }
+            a {
+                background: $darkwhite;
+            }
+        }
+        .entry-title {
+            background: $darkwhite url('images/logo-symbol.png') no-repeat center bottom;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: 1.3em;
+            padding-bottom: 1.5em;
+        }
+        .entry-summary {
+            background: $darkwhite;
+            margin-top: 0;
+            padding-top: .8em;
+            padding-bottom: .8em;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: .9rem;
+    }
+    .more-link {
+        display: block;
+        clear: both;
+        width: 150px;
+        margin: 1.5em auto;
+        padding: .5em 0;
+        border: 1px solid $lightergray;
+        color: $lightgray;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font-secondary;
+    }
+}
