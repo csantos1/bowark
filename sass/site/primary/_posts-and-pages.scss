@@ -47,6 +47,26 @@
     }
 }
 
+.arrow-right-thumb {
+    background: $darkwhite;
+    .thumbnail {
+        position: relative;
+        span {
+            position: absolute;
+            left: 0;
+            top: 65px;
+            width: 47px;
+            height: 104px;
+            background: url('images/arrow-right-white.png') no-repeat right top;
+            z-index: 10;
+        }  
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 .project-list {
     margin: 0;
     padding: 0;
@@ -84,5 +104,50 @@
             padding: 0 0 1em 26px;
             font-size: .9em;
         }
+    }
+}
+
+.homepage {
+    padding: 45px 0;
+    .home-text {
+        padding: 1em 3em;
+       h1 {
+           text-align: center;
+       };
+       p {
+           text-align: center;
+       }       
+    }
+    .arrow-left-thumb {
+        .thumbnail {
+            span {
+                top: 135px;
+            }
+        }
+    }
+    .arrow-right-thumb {
+        .thumbnail {
+            span {
+                top: 135px;
+            }
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid $lightergray;
+    color: $lightgray;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-secondary;
+    margin: 1.5em auto;
+    padding: .5em 1.3em;
+    i {
+        font-size: 1.5rem;
+        margin-left: 8px;
+        position: relative;
+        top: 2px;
+        color: $lightergray;
     }
 }

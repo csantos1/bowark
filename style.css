@@ -558,7 +558,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #D11C24;
+  color: #074b88;
 }
 
 a:focus {
@@ -1023,6 +1023,29 @@ a:hover, a:active {
   padding: 0;
 }
 
+.arrow-right-thumb {
+  background: #f5f5f5;
+}
+
+.arrow-right-thumb .thumbnail {
+  position: relative;
+}
+
+.arrow-right-thumb .thumbnail span {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  width: 47px;
+  height: 104px;
+  background: url("images/arrow-right-white.png") no-repeat right top;
+  z-index: 10;
+}
+
+.arrow-right-thumb p {
+  margin: 0;
+  padding: 0;
+}
+
 .project-list {
   margin: 0;
   padding: 0;
@@ -1064,6 +1087,49 @@ a:hover, a:active {
   background: url("images/icon-check-buble.png") no-repeat left 2px;
   padding: 0 0 1em 26px;
   font-size: .9em;
+}
+
+.homepage {
+  padding: 45px 0;
+}
+
+.homepage .home-text {
+  padding: 1em 3em;
+}
+
+.homepage .home-text h1 {
+  text-align: center;
+}
+
+.homepage .home-text p {
+  text-align: center;
+}
+
+.homepage .arrow-left-thumb .thumbnail span {
+  top: 135px;
+}
+
+.homepage .arrow-right-thumb .thumbnail span {
+  top: 135px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #bebebe;
+  color: #819090;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  margin: 1.5em auto;
+  padding: .5em 1.3em;
+}
+
+.button i {
+  font-size: 1.5rem;
+  margin-left: 8px;
+  position: relative;
+  top: 2px;
+  color: #bebebe;
 }
 
 /*--------------------------------------------------------------
@@ -1409,6 +1475,21 @@ object {
   .upw-posts article .entry-image span {
     left: 82px;
   }
+  .homepage .home-text {
+    padding: .2em 3em;
+  }
+  .homepage h1.entry-title {
+    font-size: 20px;
+  }
+  .homepage h1.entry-title span {
+    padding-bottom: 1em;
+  }
+  .homepage .arrow-left-thumb .thumbnail span {
+    top: 68px;
+  }
+  .homepage .arrow-right-thumb .thumbnail span {
+    top: 68px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1434,6 +1515,15 @@ object {
   }
   .upw-posts article .entry-image span {
     left: 115px;
+  }
+  .homepage .home-text {
+    padding: .5em 3em;
+  }
+  .homepage .arrow-left-thumb .thumbnail span {
+    top: 105px;
+  }
+  .homepage .arrow-right-thumb .thumbnail span {
+    top: 105px;
   }
 }
 

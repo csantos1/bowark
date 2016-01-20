@@ -79,6 +79,31 @@
           }
       }
   }
+  .homepage {
+        .home-text {
+            padding: .2em 3em;
+        }
+        h1.entry-title {
+            font-size: 20px;
+            span {
+                padding-bottom: 1em;
+            }
+        }
+        .arrow-left-thumb {
+            .thumbnail {
+                span {
+                    top: 68px;
+                }
+            }
+        }
+        .arrow-right-thumb {
+            .thumbnail {
+                span {
+                    top: 68px;
+                }
+            }
+        }
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -115,6 +140,25 @@
           }
       }
   }
+  .homepage {
+        .home-text {
+            padding: .5em 3em;
+        }
+        .arrow-left-thumb {
+            .thumbnail {
+                span {
+                    top: 105px;
+                }
+            }
+        }
+        .arrow-right-thumb {
+            .thumbnail {
+                span {
+                    top: 105px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1200px) {
