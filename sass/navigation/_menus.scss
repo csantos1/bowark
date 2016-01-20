@@ -169,6 +169,56 @@
     }
 }
 
+.side-menu {
+    ul {
+        li {
+            list-style: none;
+            margin: 0 0 1em;
+            a {
+                color: $gray;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 51px;
+                display: block;
+                padding: 0 0 0 70px;
+                position: relative;
+                background: $darkwhite;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 61px;
+                    height: 61px;
+                    position: absolute;
+                    left: -20px;
+                    top: -3px;
+                }
+                &[href*="projects"]:before {
+                    background: url('images/icon-projects-large.png') no-repeat center center;
+                }
+                &[href*="current"]:before {
+                    background: url('images/icon-current-large.png') no-repeat center center;
+                }                
+            }
+            &.current_page_item a {
+                background: $blue;
+                color: $white;
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 13px;
+                    height: 51px;
+                    background: url('images/arrow-right-blue.png') no-repeat center center;
+                    position: absolute;
+                    right: -13px;
+                    top: 0;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

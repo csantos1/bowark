@@ -47,6 +47,7 @@ function bowark_setup() {
 		'primary' => esc_html__( 'Primary', 'bowark' ),
 		'top' => esc_html__( 'Top', 'bowark' ),
 		'footer' => esc_html__( 'Footer', 'bowark' ),
+		'about' => esc_html__( 'About', 'bowark' ),
 	) );
 
 	/*
@@ -126,6 +127,15 @@ function bowark_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'bowark' ),
 		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar About', 'bowark' ),
+		'id'            => 'sidebar-about',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

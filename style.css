@@ -290,6 +290,12 @@ h1 {
   font-weight: 700;
 }
 
+h1.entry-title span {
+  display: inline-block;
+  padding-bottom: .5em;
+  background: url("images/logo-symbol.png") no-repeat center bottom;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -689,6 +695,58 @@ a:hover, a:active {
   content: '';
 }
 
+.side-menu ul li {
+  list-style: none;
+  margin: 0 0 1em;
+}
+
+.side-menu ul li a {
+  color: #484b52;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 51px;
+  display: block;
+  padding: 0 0 0 70px;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.side-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: -20px;
+  top: -3px;
+}
+
+.side-menu ul li a[href*="projects"]:before {
+  background: url("images/icon-projects-large.png") no-repeat center center;
+}
+
+.side-menu ul li a[href*="current"]:before {
+  background: url("images/icon-current-large.png") no-repeat center center;
+}
+
+.side-menu ul li.current_page_item a {
+  background: #074b88;
+  color: #fff;
+}
+
+.side-menu ul li.current_page_item a:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 51px;
+  background: url("images/arrow-right-blue.png") no-repeat center center;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  z-index: 10;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -876,6 +934,10 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
+.project-listing {
+  height: 300px;
+}
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -901,6 +963,7 @@ a:hover, a:active {
 .site-footer {
   background: #484b52;
   color: #bebebe;
+  margin-top: 37px;
 }
 
 .site-footer #top-button {

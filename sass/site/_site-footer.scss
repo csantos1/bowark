@@ -1,6 +1,7 @@
 .site-footer {
     background: $gray;
     color: $lightergray;
+    margin-top: 37px;
     #top-button {
         @include center-block;
         position: relative;
